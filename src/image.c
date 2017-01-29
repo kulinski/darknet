@@ -467,7 +467,9 @@ void show_image_cv(image p, const char *name)
 void show_image(image p, const char *name)
 {
 #ifdef OPENCV
-    show_image_cv(p, name);
+    //show_image_cv(p, name);
+    fprintf(stderr, "Headless mode, saving to %s local file\n", name);
+    save_image(p, name);
 #else
     fprintf(stderr, "Not compiled with OpenCV, saving to %s.png instead\n", name);
     save_image(p, name);
