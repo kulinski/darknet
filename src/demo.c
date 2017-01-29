@@ -154,9 +154,9 @@ void demo(char *cfgfile, char *weightfile, float thresh, int cam_index, const ch
 
     int count = 0;
     if(!prefix){
-        cvNamedWindow("Demo", CV_WINDOW_NORMAL); 
-        cvMoveWindow("Demo", 0, 0);
-        cvResizeWindow("Demo", 1352, 1013);
+        //cvNamedWindow("Demo", CV_WINDOW_NORMAL); 
+        //cvMoveWindow("Demo", 0, 0);
+        //cvResizeWindow("Demo", 1352, 1013);
     }
 
     double before = get_wall_time();
